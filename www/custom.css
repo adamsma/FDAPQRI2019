@@ -1,0 +1,23 @@
+.reveal .slides section .fragment.strike-red,
+.reveal .slides section .fragment.strike-current-red{
+	opacity: 1;
+	visibility: inherit;
+}
+
+.reveal .slides section .fragment.strike-red.visible{
+	color: #ff2c2d;
+	text-decoration: line-through;
+		text-decoration-line: line-through;
+		text-decoration-style: initial;
+		text-decoration-color: initial;
+}
+
+.reveal .slides section .fragment.insert-right{
+	transform: translate(-20%, 0);
+	font-size: 0%
+}
+
+.reveal .slides section .fragment.insert-right.visible{
+	transform: translate(0, 0);
+	font-size: 100%
+}

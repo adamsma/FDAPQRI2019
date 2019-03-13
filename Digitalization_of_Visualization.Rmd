@@ -2,41 +2,44 @@
 title: "Beyond the Big Crunch of Excel: The Big Bang of Digital Visualizations"
 author: Marcus Adams
 date: April 10, 2019
-data-background: img/NASA-BigBang.png
 output: 
   revealjs::revealjs_presentation:
     theme: league
     highlight: kate
+    css: www/custom.css
     template: www/modTemplate.html
 #    reveal_plugins: ["zoom"]
 ---
 
-## R Markdown
+<section class="stack level1">
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+<h2>At a time when slide rules roamed the land...</h2> 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+<p class="fragment fade-up" data-fragment-index="0">
+  ...one man, 
+  <span class="fragment strike-red" data-fragment-index="1">Jon</span>
+  <span class="fragment insert-right" data-fragment-index="1">John</span>
+   Snow, would dare to visualize..
+</p>
 
-## Slide with Bullets
+![](img/john-snow.jpg)
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+<p class="fragment fade-up" data-fragment-index="2">
+  ...and change public health *forever*...
+</p>
 
-## Slide with R Code and Output
+## Plots in the Time of Cholera
 
-```{r}
-summary(cars)
-```
+![](img/snow_map.png)
+</section>
 
-## Slide with Plot
+<section class="stack level1">
 
-```{r, echo=FALSE}
-plot(cars)
-```
+- Be Purposeful
+- Be Deliberate
+- Be Be Consistent
 
-## Slide with Code But No Output
-```{r Code, eval=FALSE}
-1+1
-this <- function(x, y) { glue::glue("Go tell {x} to go {y} itself")}
-```
+</section>
+
+# Then There Was Excel...
+
