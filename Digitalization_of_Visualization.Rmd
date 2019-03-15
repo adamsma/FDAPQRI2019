@@ -8,6 +8,8 @@ output:
     highlight: kate
     css: www/custom.css
     template: www/modTemplate.html
+    include:
+      after_body: www/enable_title_img_suffix.html
 #    reveal_plugins: ["zoom"]
 ---
 
