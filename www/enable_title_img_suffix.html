@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<script>
+		document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+		//console.log("initialized");
+	</script>
+	
+	<script>
+		Reveal.addEventListener( 'slidechanged', function( event ) {
+			document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+			//console.log("slide changed!");
+		});
+	</script>
+	
+	<script>
+		Reveal.addEventListener( 'overviewshown', function( event ) {
+			document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+			//console.log("overview shown!");
+		});
+	</script>
+	
+	<script>
+		Reveal.addEventListener( 'overviewhidden', function( event ) {
+			document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+			//console.log("overview hidden!");
+		});
+	</script>
+	
+</html>
