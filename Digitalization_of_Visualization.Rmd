@@ -11,18 +11,18 @@ output:
 #    reveal_plugins: ["zoom"]
 ---
 
-<section class="stack level1">
+<section class="titleslide level1">
 
-<h2>At a time when slide rules roamed the land...</h2> 
+<h1>At a time when slide rules roamed the land...</h1>
 
 <p class="fragment fade-up" data-fragment-index="0">
   ...one man, 
-  <span class="fragment strike-red" data-fragment-index="1">Jon</span>
-  <span class="fragment insert-right" data-fragment-index="1">John</span>
-   Snow, would dare to visualize..
+	<span class="fragment strike-red" data-fragment-index="1">Jon</span><span 
+		class="fragment insert-right" data-fragment-index="1">John</span>
+	Snow, would dare to visualize...
 </p>
 
-![](img/john-snow.jpg)
+![](img/john-snow.jpg){style="max-width:47%; max-height:47%"}
 
 <p class="fragment fade-up" data-fragment-index="2">
   ...and change public health *forever*...
@@ -30,16 +30,114 @@ output:
 
 ## Plots in the Time of Cholera
 
-![](img/snow_map.png)
+![](img/snow_map.png){style="max-width:65%; max-height:65%"}
 </section>
 
-<section class="stack level1">
+-------------------------------------------------------------------------------
 
-- Be Purposeful
-- Be Deliberate
-- Be Be Consistent
+<section class="titleslide level1">
+<h1>If You Mustache For Advice</h1>
 
+## Some References{}
+
+## And Some More
+
+## Even More....
+
+
+</section>
+
+-------------------------------------------------------------------------------
+<h1>Be Purposeful</h1>
+<section class="titleslide level1">
+## Philosophical Considerations
+
+## Pragmatic Considerations
+</section>
+
+-------------------------------------------------------------------------------
+<h1>Be Deliberate</h1>
+<section class="titleslide level1">
+
+## Tufte Says..
+
+## Hierarchy of Visual Comparison
+
+
+</section>
+
+-------------------------------------------------------------------------------
+<h1>Be Consistent</h1>
+<section class="titleslide level1">
 </section>
 
 # Then There Was Excel...
 
+-------------------------------------------------------------------------------
+
+
+<blockquote class="single-quote">
+Computers have enabled people to make more mistakes faster than almost any invention in history, with the possible exception of tequila and handguns.<br>
+--- Mitch Ratcliffe
+</blockquote>
+
+
+# Now Entering the World of Digital Visualization
+
+## Digital Visualizations Vs Digital Production
+
+* Two Approaches Enter, One Approach Leaves
+* Digital Visualizations are inherently Digitally Produced
+* Not just digital producing static assets
+	+ e.g. digital printing has helped with late stage customization
+	+ think type setting vs. printers as we know them now
+* Digital Production has it's pitfalls
+	+ Where we need to remember our design principles
+* Digital Visualizations have more capabilities/advantages
+	+ Requires viewing on a digital medium
+	+ Sets the stage for reproducibility, traceability, automatic updates
+
+## The Digital Triad of Power
+
+* Static Viz
+* Interactive Viz
+* Motion Viz
+
+# Static Digital Visualizations
+
+## Digital Job Aids and 3D Projections
+
+# Interactive Visualizations
+
+# Motion Visualizations
+
+# Combined and Beyond
+
+# Benefits
+
+## Analytical Benefits
+
+* Faster, better information
+* Large brain, small attention capacity
+
+## Compliance benefits
+
+Sets the stage (not inherent) for
+* Reproducible research and reports
+* Automated or real time updates
+* Traceability
+
+# Conclusion
+
+## Remember
+* To Use Design Principles
+* There is a universe beyond Excel
+* Move beyond just digital versions of analog visualizations
+
+--------------------------------------
+<section class="titleslide level1">
+<blockquote class="single-quote">
+We can only see a short distance ahead, but we can see plenty there that needs to be done.<br>
+--- Alan Turing
+</blockquote>
+</section>
