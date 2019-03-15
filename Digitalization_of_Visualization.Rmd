@@ -6,6 +6,7 @@ output:
   revealjs::revealjs_presentation:
     theme: league
     highlight: kate
+    self_contained: FALSE
     css: www/custom.css
     template: www/modTemplate.html
     include:
