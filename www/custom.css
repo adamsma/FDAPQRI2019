@@ -33,3 +33,23 @@
 	margin: 0;
 	margin-top: 9vw;
 }
+
+.reveal .slides section .fragment.disappear{
+	opacity: 1;
+	visibility: inherit;
+}
+
+.reveal .slides section .fragment.disappear.visible{
+	transform: scale(0);
+	visibility: hidden;
+}
+
+.reveal .slides section .fragment.appear{
+	transform: scale(0);
+	visibility: hidden;
+}
+
+.reveal .slides section .fragment.appear.visible{
+	transform: scale(1);
+	visibility: visible;
+}
