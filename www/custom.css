@@ -37,19 +37,23 @@
 .reveal .slides section .fragment.disappear{
 	opacity: 1;
 	visibility: inherit;
+	display: inline-block;
 }
 
 .reveal .slides section .fragment.disappear.visible{
 	transform: scale(0);
 	visibility: hidden;
+	display: none;
 }
 
 .reveal .slides section .fragment.appear{
 	transform: scale(0);
 	visibility: hidden;
+	display: none;
 }
 
 .reveal .slides section .fragment.appear.visible{
 	transform: scale(1);
-	visibility: visible;
+	visibility: inherit;
+	display: inline-block;
 }
