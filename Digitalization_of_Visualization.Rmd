@@ -58,6 +58,8 @@ output:
 ## Philosophical Considerations
 
 ## Pragmatic Considerations
+
+If it's a statistical control chart, don't put on specs. Use a histogram
 </section>
 
 -------------------------------------------------------------------------------
@@ -76,7 +78,15 @@ output:
 <section class="titleslide level1">
 </section>
 
-# Then There Was Excel...
+-------------------------------------------------------------------------------
+<h1>Then There Was Excel...</h1>
+<section class="titleslide level1">
+  ![](img/Clippy_Excel.png)
+
+-------------------------------------------------------------------------------
+![](img/3dBar.jpg)
+
+</section>
 
 # Now Entering the World of Digital Visualization
 
@@ -126,9 +136,9 @@ Sets the stage (not inherent) for
 # Conclusion
 
 ## Remember
-* Be (Design) Principled
-* See Beyond Excel
-* Embrace Digital Media
+* Start With Design Principles
+* Move Beyond Excel Defaults
+* Expand Use of Digital Media
 
 --------------------------------------
 
