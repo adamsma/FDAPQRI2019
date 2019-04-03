@@ -1,0 +1,24 @@
+---
+output: 
+  revealjs::revealjs_presentation:
+    theme: league
+    pandoc_args: [
+      "--output", "index.html"
+    ]
+    highlight: kate
+    self_contained: TRUE
+    reveal_options:
+      controls: FALSE
+---
+
+## Beyond the Big Crunch of Excel: {data-background='https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/northamerica_vir_2018111_lrg.jpg'} 
+<h2>The Big Bang of Digital Visualizations</h2> 
+
+<div style="text-align: left; font-size: 105%">
+<p style="line-height: 1.1">
+*With its introduction over 30 years ago, Microsoft Excel marked a new epoch in the history of data visualization. In embracing this new era (and its often-regrettable default style choices), did we lose our connection to the design side of visualizations?*
+</p>
+<p style="line-height: 1.1">
+*As we progress through the Information Age, creating meaningful visualizations will be critical in translating the rapidly expanding cosmos of data into meaningful insights as to how to improve product quality.  To do so effectively, we must start at classical visualization principles, adopt new methods, and discover the novel capabilities afforded by a digitized universe.*
+</p>
+</div>

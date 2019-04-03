@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 Digitalization_of_Visualization_files/*.*
+*.docx
+Digitalization_of_Visualization.knit.md
+Digitalization_of_Visualization.utf8.md
