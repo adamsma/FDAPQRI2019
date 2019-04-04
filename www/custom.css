@@ -57,3 +57,7 @@
 	visibility: inherit;
 	display: inline-block;
 }
+
+.reveal li{
+  padding-bottom: 12px;
+}

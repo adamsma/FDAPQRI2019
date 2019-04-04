@@ -6,13 +6,16 @@ output:
   revealjs::revealjs_presentation:
     theme: league
     highlight: kate
-    self_contained: TRUE
+    self_contained: FALSE
+    pandoc_args: [
+      "--output", "slides.html"
+    ]
     css: www/custom.css
-    template: www/modTemplate.html
-    # template: www/modJPGTemplate.html
+    # template: www/modTemplate.html
+    template: www/modJPGTemplate.html
     include:
       after_body: www/enable_title_img_suffix.html
-#    reveal_plugins: ["zoom"]
+    reveal_plugins: ["notes", "zoom"]
 ---
 
 <section class="titleslide level1">
@@ -42,14 +45,75 @@ output:
 -------------------------------------------------------------------------------
 
 <section class="titleslide level1">
-<h1>If You Mustache For Advice</h1>
+<h1>If You're Looking For Advice</h1>
 
-## Some References{}
+![](img/obligatory-meme.png)
 
-## And Some More
+<aside class = "notes">
+  Obligatory Meme - There is no shortage of people willing to tell you what to do. Here's just a few.
+</aside>
 
-## Even More....
+## Some References
 
+* Berinato, Scott. “Data Science and the Art of Persuasion.” *Harvard Business Review*, January-February 2019, pp. 126–137, http://hbr.org/2019/01/data-science-and-the-art-of-persuasion.
+* Berinato, Scott. *Good Charts: the HBR Guide to Making Smarter, More Persuasive Data Visualizations*. Harvard Business Review Press, 2016.
+* Brinton, Willard Cope. *Graphic Methods for Presenting Facts*. Engineering Magazine Company, 1919.
+* Chen, Chun-houh, et al. *Handbook of Data Visualization*. Springer, 2016.
+* Cleveland, William S. *The Elements of Graphing Data*. AT&T Bell, 1994.
+
+<aside class = "notes">
+  * A book from Harvard so you know it's good
+  * Going real old school with Brinton
+  * Compliation, so even more bang for your buck
+</aside>
+
+## Some More
+
+* Cook, Dianne, and Deborah F. Swayne. *Interactive and Dynamic Graphics for Data Analysis with R and GGobi*. Springer Science+Business Media, LLC, 2008.
+* Dzemyda, Gintautas, et al. *Multidimensional Data Visualization: Methods and Applications*. Springer Science+Business Media, 2013.
+* Ellis, Laura. “Little Miss Data - Weird Graphs.” *Little Miss Data*, http://www.littlemissdata.com/search?q=weird%20graphs.
+* Healy, Kieran. *Data Visualization: A Practical Introduction*. Princeton University Press, 2019.
+
+<aside class = "notes">
+  * A blog...typical millennials
+</aside>
+
+## Even More
+
+* Huff, Darrell, and Irving Geis. *How to Lie with Statistics*. W.W. Norton & Co., 2006.
+* Lidwell, William, et al. *Universal Principles of Design: 125 Ways to Enhance Usability, Influence Perception, Increase Appeal, Make Better Design Decisions, and Teach through Design*. Rockport, 2010.
+* Postman, Neil. *Amusing Ourselves to Death: Public Discourse in the Age of Show Business*. Simon Fraser University, 2007.
+* “Results - The Visual Display of Data.” *Biomedical Research: How to Plan, Publish, and Present It*, by W. F. Whimster et al., Springer, 1997, pp. 70–93.
+
+<aside class = "notes">
+  * sprinkling in some design principles
+</aside>
+
+## Yet Still More
+
+* Schwab, Pierre-Nicolas. “Big Data and Ethics: How Visualization Can Screw It Up.” *Into the Minds*, http://www.intotheminds.com/blog/en/big-data-and-ethics-how-visualization-can-screw-it-up/.
+* Sen, Amit. “Visual Thinking: The New Business Language.” *Engadget*, http://www.engadget.com/2016/12/14/visual-thinking-the-new-business-language/.
+* Sula, Chris Alen. “The Ethics of Visualization.” *Chris Alen Sula*, http://chrisalensula.org/the-ethics-of-visualization/.
+* Sunstein, Cass R., and Richard H. Thaler. *Nudge: Improving Decisions about Health, Wealth and Happiness*. Penguin, 2009.
+
+<aside class = "notes">
+  * some more blog, since this is a talk about digitalization after all
+  * make sure you get some ethics in there
+  * behavioral economics and visualization aren't that unrelated; plus he is a Nobel laureate
+</aside>
+
+## One More 'More'
+* Tufte, Edward Rolf. *The Visual Display of Quantitative Information*. Graphics Press, 2015.
+* Wickham, Hadley. “A Layered Grammar of Graphics.” *Journal of Computational and Graphical Statistics*, Vol. 19, No. 1, 2010, pp. 3–28., doi:10.1198/jcgs.2009.07098.
+* Wilke, Claus O. *Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures*. O'Reilly Media, 2018.
+* Wilkinson, Leland. *Grammar of Graphics*. Springer, 2012.
+* Zhu, Ying. “Measuring Effective Data Visualization.” *Advances in Visual Computing Lecture Notes in Computer Science*, Part III, 2007, pp. 652–661., doi:10.1007/978-3-540-76856-2_64.
+
+<aside class = "notes">
+  * A classic with the first one
+  * Grammar of Graphics is a real page turner
+  * And a few journal articles for the academic types
+</aside>
 
 </section>
 

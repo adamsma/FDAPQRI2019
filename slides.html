@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Marcus Adams" />
+  <meta name="dcterms.date" content="2019-04-10" />
+  <title>Beyond the Big Crunch of Excel: The Big Bang of Digital Visualizations</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="Digitalization_of_Visualization_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="Digitalization_of_Visualization_files/reveal.js-3.3.0.1/css/theme/league.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="www\custom.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section data-background-image="img/NASA-BigBang.jpg">
+    <h1 class="title">Beyond the Big Crunch of Excel: The Big Bang of Digital Visualizations</h1>
+    <h2 class="author" align="left">Marcus Adams</h2>
+    <h3 class="date" align="left">April 10, 2019</h3>
+</section>
+
+<section class="slide level2">
+
+<section class="titleslide level1">
+<h1>
+At a time when slide rules roamed the land…
+</h1>
+<p class="fragment fade-up" data-fragment-index="0">
+…one man, <span class="fragment strike-red" data-fragment-index="1">Jon</span><span class="fragment insert-right" data-fragment-index="1">John</span> Snow, would dare to visualize… <img src="img/jon-snow-got.jpg" style="max-width:47%; max-height:47%"" class="fragment disappear" data-fragment-index="1"> <img src="img/john-snow.jpg" class="fragment appear" style="max-width:47%; max-height:47%" data-fragment-index="1">
+</p>
+<p class="fragment fade-up" data-fragment-index="3">
+…and change public health <em>forever</em>…
+</p>
+</section>
+<section id="plots-in-the-time-of-cholera" class="slide level2">
+<h2>Plots in the Time of Cholera</h2>
+<img src="img/snow_map.png" style="max-width:65%; max-height:65%" />
+</section>
+</section>
+<section class="slide level2">
+
+<section class="titleslide level1">
+<h1>
+If You’re Looking For Advice
+</h1>
+<p><img src="img/obligatory-meme.png" /></p>
+<aside class="notes">
+Obligatory Meme - There is no shortage of people willing to tell you what to do. Here’s just a few.
+</aside>
+</section>
+<section id="some-references" class="slide level2">
+<h2>Some References</h2>
+<ul>
+<li>Berinato, Scott. “Data Science and the Art of Persuasion.” <em>Harvard Business Review</em>, January-February 2019, pp. 126–137, <a href="http://hbr.org/2019/01/data-science-and-the-art-of-persuasion" class="uri">http://hbr.org/2019/01/data-science-and-the-art-of-persuasion</a>.</li>
+<li>Berinato, Scott. <em>Good Charts: the HBR Guide to Making Smarter, More Persuasive Data Visualizations</em>. Harvard Business Review Press, 2016.</li>
+<li>Brinton, Willard Cope. <em>Graphic Methods for Presenting Facts</em>. Engineering Magazine Company, 1919.</li>
+<li>Chen, Chun-houh, et al. <em>Handbook of Data Visualization</em>. Springer, 2016.</li>
+<li>Cleveland, William S. <em>The Elements of Graphing Data</em>. AT&amp;T Bell, 1994.</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>A book from Harvard so you know it’s good</li>
+<li>Going real old school with Brinton</li>
+<li>Compliation, so even more bang for your buck</li>
+</ul>
+</aside>
+</section>
+<section id="some-more" class="slide level2">
+<h2>Some More</h2>
+<ul>
+<li>Cook, Dianne, and Deborah F. Swayne. <em>Interactive and Dynamic Graphics for Data Analysis with R and GGobi</em>. Springer Science+Business Media, LLC, 2008.</li>
+<li>Dzemyda, Gintautas, et al. <em>Multidimensional Data Visualization: Methods and Applications</em>. Springer Science+Business Media, 2013.</li>
+<li>Ellis, Laura. “Little Miss Data - Weird Graphs.” <em>Little Miss Data</em>, <a href="http://www.littlemissdata.com/search?q=weird%20graphs">http://www.littlemissdata.com/search?q=weird%20graphs</a>.</li>
+<li>Healy, Kieran. <em>Data Visualization: A Practical Introduction</em>. Princeton University Press, 2019.</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>A blog…typical millennials</li>
+</ul>
+</aside>
+</section>
+<section id="even-more" class="slide level2">
+<h2>Even More</h2>
+<ul>
+<li>Huff, Darrell, and Irving Geis. <em>How to Lie with Statistics</em>. W.W. Norton &amp; Co., 2006.</li>
+<li>Lidwell, William, et al. <em>Universal Principles of Design: 125 Ways to Enhance Usability, Influence Perception, Increase Appeal, Make Better Design Decisions, and Teach through Design</em>. Rockport, 2010.</li>
+<li>Postman, Neil. <em>Amusing Ourselves to Death: Public Discourse in the Age of Show Business</em>. Simon Fraser University, 2007.</li>
+<li>“Results - The Visual Display of Data.” <em>Biomedical Research: How to Plan, Publish, and Present It</em>, by W. F. Whimster et al., Springer, 1997, pp. 70–93.</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>sprinkling in some design principles</li>
+</ul>
+</aside>
+</section>
+<section id="yet-still-more" class="slide level2">
+<h2>Yet Still More</h2>
+<ul>
+<li>Schwab, Pierre-Nicolas. “Big Data and Ethics: How Visualization Can Screw It Up.” <em>Into the Minds</em>, <a href="http://www.intotheminds.com/blog/en/big-data-and-ethics-how-visualization-can-screw-it-up/" class="uri">http://www.intotheminds.com/blog/en/big-data-and-ethics-how-visualization-can-screw-it-up/</a>.</li>
+<li>Sen, Amit. “Visual Thinking: The New Business Language.” <em>Engadget</em>, <a href="http://www.engadget.com/2016/12/14/visual-thinking-the-new-business-language/" class="uri">http://www.engadget.com/2016/12/14/visual-thinking-the-new-business-language/</a>.</li>
+<li>Sula, Chris Alen. “The Ethics of Visualization.” <em>Chris Alen Sula</em>, <a href="http://chrisalensula.org/the-ethics-of-visualization/" class="uri">http://chrisalensula.org/the-ethics-of-visualization/</a>.</li>
+<li>Sunstein, Cass R., and Richard H. Thaler. <em>Nudge: Improving Decisions about Health, Wealth and Happiness</em>. Penguin, 2009.</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>some more blog, since this is a talk about digitalization after all</li>
+<li>make sure you get some ethics in there</li>
+<li>behavioral economics and visualization aren’t that unrelated; plus he is a Nobel laureate</li>
+</ul>
+</aside>
+</section>
+<section id="one-more-more" class="slide level2">
+<h2>One More ‘More’</h2>
+<ul>
+<li>Tufte, Edward Rolf. <em>The Visual Display of Quantitative Information</em>. Graphics Press, 2015.</li>
+<li>Wickham, Hadley. “A Layered Grammar of Graphics.” <em>Journal of Computational and Graphical Statistics</em>, Vol. 19, No. 1, 2010, pp. 3–28., <a href="doi:10.1198/jcgs.2009.07098" class="uri">doi:10.1198/jcgs.2009.07098</a>.</li>
+<li>Wilke, Claus O. <em>Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures</em>. O’Reilly Media, 2018.</li>
+<li>Wilkinson, Leland. <em>Grammar of Graphics</em>. Springer, 2012.</li>
+<li>Zhu, Ying. “Measuring Effective Data Visualization.” <em>Advances in Visual Computing Lecture Notes in Computer Science</em>, Part III, 2007, pp. 652–661., <a href="doi:10.1007/978-3-540-76856-2_64" class="uri">doi:10.1007/978-3-540-76856-2_64</a>.</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>A classic with the first one</li>
+<li>Grammar of Graphics is a real page turner</li>
+<li>And a few journal articles for the academic types</li>
+</ul>
+</aside>
+</section>
+</section>
+<section class="slide level2">
+
+<h1>
+Be Purposeful
+</h1>
+<section class="titleslide level1">
+</section>
+<section id="philosophical-considerations" class="slide level2">
+<h2>Philosophical Considerations</h2>
+</section>
+<section id="pragmatic-considerations" class="slide level2">
+<h2>Pragmatic Considerations</h2>
+If it’s a statistical control chart, don’t put on specs. Use a histogram
+</section>
+</section>
+<section class="slide level2">
+
+<h1>
+Be Deliberate
+</h1>
+<section class="titleslide level1">
+</section>
+<section id="tufte-says.." class="slide level2">
+<h2>Tufte Says..</h2>
+</section>
+<section id="hierarchy-of-visual-comparison" class="slide level2">
+<h2>Hierarchy of Visual Comparison</h2>
+</section>
+</section>
+<section class="slide level2">
+
+<h1>
+Be Consistent
+</h1>
+<section class="titleslide level1">
+</section>
+</section>
+<section class="slide level2">
+
+<h1>
+Then There Was Excel…
+</h1>
+<section class="titleslide level1">
+<p><img src="img/Clippy_Excel.png" /></p>
+</section>
+<section class="slide level2">
+
+<p><img src="img/3dBar.jpg" /></p>
+</section>
+</section>
+<section><section id="now-entering-the-world-of-digital-visualization" class="titleslide slide level1"><h1>Now Entering the World of Digital Visualization</h1></section><section id="digital-visualizations-vs-digital-production" class="slide level2">
+<h2>Digital Visualizations Vs Digital Production</h2>
+<ul>
+<li>Two Approaches Enter, One Approach Leaves</li>
+<li>Digital Visualizations are inherently Digitally Produced</li>
+<li>Not just digital producing static assets
+<ul>
+<li>e.g. digital printing has helped with late stage customization</li>
+<li>think type setting vs. printers as we know them now</li>
+</ul></li>
+<li>Digital Production has it’s pitfalls
+<ul>
+<li>Where we need to remember our design principles</li>
+</ul></li>
+<li>Digital Visualizations have more capabilities/advantages
+<ul>
+<li>Requires viewing on a digital medium</li>
+<li>Sets the stage for reproducibility, traceability, automatic updates</li>
+</ul></li>
+</ul>
+</section><section id="the-digital-triad-of-power" class="slide level2">
+<h2>The Digital Triad of Power</h2>
+<ul>
+<li>Static Viz</li>
+<li>Interactive Viz</li>
+<li>Motion Viz</li>
+</ul>
+</section></section>
+<section><section id="static-digital-visualizations" class="titleslide slide level1"><h1>Static Digital Visualizations</h1></section><section id="digital-job-aids-and-3d-projections" class="slide level2">
+<h2>Digital Job Aids and 3D Projections</h2>
+</section></section>
+<section><section id="interactive-visualizations" class="titleslide slide level1"><h1>Interactive Visualizations</h1></section></section>
+<section><section id="motion-visualizations" class="titleslide slide level1"><h1>Motion Visualizations</h1></section></section>
+<section><section id="combined-and-beyond" class="titleslide slide level1"><h1>Combined and Beyond</h1></section></section>
+<section><section id="benefits" class="titleslide slide level1"><h1>Benefits</h1></section><section id="analytical-benefits" class="slide level2">
+<h2>Analytical Benefits</h2>
+<ul>
+<li>Faster, better information</li>
+<li>Large brain, small attention capacity</li>
+</ul>
+</section><section id="compliance-benefits" class="slide level2">
+<h2>Compliance benefits</h2>
+<p>Sets the stage (not inherent) for * Reproducible research and reports * Automated or real time updates * Traceability</p>
+</section></section>
+<section><section id="conclusion" class="titleslide slide level1"><h1>Conclusion</h1></section><section id="remember" class="slide level2">
+<h2>Remember</h2>
+<ul>
+<li>Start With Design Principles</li>
+<li>Move Beyond Excel Defaults</li>
+<li>Expand Use of Digital Media</li>
+</ul>
+</section><section class="slide level2">
+
+<blockquote class="single-quote">
+Computers have enabled people to make more mistakes faster than almost any invention in history, with the possible exception of tequila and handguns.<br> — Mitch Ratcliffe
+</blockquote>
+</section></section>
+    </div>
+  </div>
+
+  <script src="Digitalization_of_Visualization_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="Digitalization_of_Visualization_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'Digitalization_of_Visualization_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 'Digitalization_of_Visualization_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+<!DOCTYPE html>
+<html>
+	<script>
+		document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+		//console.log("initialized");
+	</script>
+	
+	<script>
+		Reveal.addEventListener( 'slidechanged', function( event ) {
+			document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+			//console.log("slide changed!");
+		});
+	</script>
+	
+	<script>
+		Reveal.addEventListener( 'overviewshown', function( event ) {
+			document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+			//console.log("overview shown!");
+		});
+	</script>
+	
+	<script>
+		Reveal.addEventListener( 'overviewhidden', function( event ) {
+			document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+			//console.log("overview hidden!");
+		});
+	</script>
+	
+</html>
+
+  </body>
+</html>
