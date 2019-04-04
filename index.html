@@ -442,6 +442,13 @@ style.innerHTML = style_script;
 document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
+    <!DOCTYPE html>
+    <html>
+    	<title>Beyond the Big Crunch of Excel: The Big Bang of Digital Visualizations</title>
+    	<meta name="Description" content="Presentation on the digitalization of visualizations 
+    	given by Marcus Adams at the 4th FDA/PQRI Conference on Advancing Product Quality 
+    	Patient-Centric Product Design, Drug Development and Manufacturing 2019">
+    </html>
 </head>
 <body>
   <div class="reveal">
@@ -512,6 +519,37 @@ The Big Bang of Digital Visualizations
   })();
 </script>
 
+<!DOCTYPE html>
+<html>
+	<script>
+		document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+		//console.log("initialized");
+	</script>
+	
+	<script>
+		Reveal.addEventListener( 'slidechanged', function( event ) {
+			document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+			//console.log("slide changed!");
+		});
+	</script>
+	
+	<script>
+		Reveal.addEventListener( 'overviewshown', function( event ) {
+			document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+			//console.log("overview shown!");
+		});
+	</script>
+	
+	<script>
+		Reveal.addEventListener( 'overviewhidden', function( event ) {
+			document.getElementsByClassName("backgrounds")[0].children[0].style.display = "block";
+			//console.log("overview hidden!");
+		});
+	</script>
+	
+	<script>
+		document.getElementsByTagName('title')[0].text = "Beyond the Big Crunch of Excel: The Big Bang of Digital Visualizations"
+	</script>
 
   </body>
 </html>
