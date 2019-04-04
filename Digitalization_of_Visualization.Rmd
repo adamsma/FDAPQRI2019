@@ -6,7 +6,7 @@ output:
   revealjs::revealjs_presentation:
     theme: league
     highlight: kate
-    self_contained: FALSE
+    self_contained: TRUE
     pandoc_args: [
       "--output", "slides.html"
     ]
@@ -14,8 +14,9 @@ output:
     # template: www/modTemplate.html
     template: www/modJPGTemplate.html
     include:
-      after_body: www/enable_title_img_suffix.html
-    reveal_plugins: ["notes", "zoom"]
+      in_header: www/header.html
+      after_body: www/doc_suffix.html
+    # reveal_plugins: ["notes", "zoom"]
 ---
 
 <section class="titleslide level1">
@@ -122,9 +123,18 @@ output:
 <section class="titleslide level1">
 ## Philosophical Considerations
 
+<aside class = "notes">
+
+</aside>
+
 ## Pragmatic Considerations
 
-If it's a statistical control chart, don't put on specs. Use a histogram
+
+
+<aside class = "notes">
+  If it's a statistical control chart, don't put on specs. Use a histogram
+</aside>
+
 </section>
 
 -------------------------------------------------------------------------------
@@ -135,75 +145,119 @@ If it's a statistical control chart, don't put on specs. Use a histogram
 
 ## Hierarchy of Visual Comparison
 
+<aside class = "notes">
+
+</aside>
 
 </section>
 
 -------------------------------------------------------------------------------
 <h1>Be Consistent</h1>
 <section class="titleslide level1">
+
+<aside class = "notes">
+
+</aside>
+
 </section>
 
 -------------------------------------------------------------------------------
 <h1>Then There Was Excel...</h1>
 <section class="titleslide level1">
   ![](img/Clippy_Excel.png)
+<aside class = "notes">
+
+</aside>
 
 -------------------------------------------------------------------------------
 ![](img/3dBar.jpg)
 
+<aside class = "notes">
+  "That's an appropriate use of a 3D Bar Chart" -- No one ever
+</aside>
+
 </section>
 
-# Now Entering the World of Digital Visualization
+-------------------------------------------------------------------------------
+<h1>Now Entering the World of Digital Visualization</h1>
+<section class="titleslide level1">
 
-## Digital Visualizations Vs Digital Production
+<aside class = "notes">
+</aside>
 
-* Two Approaches Enter, One Approach Leaves
-* Digital Visualizations are inherently Digitally Produced
-* Not just digital producing static assets
-	+ e.g. digital printing has helped with late stage customization
-	+ think type setting vs. printers as we know them now
-* Digital Production has it's pitfalls
-	+ Where we need to remember our design principles
-* Digital Visualizations have more capabilities/advantages
-	+ Requires viewing on a digital medium
-	+ Sets the stage for reproducibility, traceability, automatic updates
+</section>
 
-## The Digital Triad of Power
+-------------------------------------------------------------------------------
 
-* Static Viz
-* Interactive Viz
-* Motion Viz
+<section class="titleslide level1">
 
-# Static Digital Visualizations
+<h1>Digital Production</h1>
 
-## Digital Job Aids and 3D Projections
+<aside class = "notes">
+  * Two Approaches Enter, One Approach Leaves
+  * Digital Visualizations are inherently Digitally Produced
+  * Not just digital producing static assets
+  	+ e.g. digital printing has helped with late stage customization
+  	+ think type setting vs. printers as we know them now
+  * Digital Production has it's pitfalls
+  	+ Where we need to remember our design principles
+  * Digital Visualizations have more capabilities/advantages
+  	+ Requires viewing on a digital medium
+  	+ Sets the stage for reproducibility, traceability, automatic updates
+</aside>
 
-# Interactive Visualizations
+</section>
 
-# Motion Visualizations
+-------------------------------------------------------------------------------
 
-# Combined and Beyond
+<section class="titleslide level1">
+<h1>The Digital Triad of Power</h1>
 
-# Benefits
+<aside class = "notes">
+  Taken from Thomas Lin Pedersen
+  * Static Viz
+  * Interactive Viz
+  * Motion Viz
+</aside>
 
-## Analytical Benefits
+## Static Digital Visualizations
 
-* Faster, better information
-* Large brain, small attention capacity
+<aside class = "notes">
+  Different formats - SVG allows scaling (first principles of visualizations)
+  Transferable
+  Include by Reference (need to discussion around data integrity)
+  Combinations
+</aside>
 
-## Compliance benefits
+## Interactive Visualizations
 
+## Motion Visualizations
+
+## Multi-Modal
+
+</section>
+
+-------------------------------------------------------------------------------
+
+<section class="titleslide level1">
+<h1>Not Just A Good Place to Buy Camping Equipment</h1>
+
+<aside class = "notes">
 Sets the stage (not inherent) for
-* Reproducible research and reports
-* Automated or real time updates
-* Traceability
+  * Reproducible research and reports
+    + Automated or real time updates
+    + Traceability
+  * Extensibile
+    + Beauty of open source
+    + Different views for different purposes (printing vs display)
+  * Integratable
+    + Google Lighthouse
+    + Reusable (iframe)
+    + Can we scripts to assess data integrity and other GxP Practices?
+  
+</aside>
 
-# Conclusion
-
-## Remember
-* Start With Design Principles
-* Move Beyond Excel Defaults
-* Expand Use of Digital Media
+</section>
 
 --------------------------------------
 
@@ -212,3 +266,25 @@ Computers have enabled people to make more mistakes faster than almost any inven
 --- Mitch Ratcliffe
 </blockquote>
 
+<aside class = "notes">
+  ## Remember
+    * Start With Design Principles
+    * Move Beyond Excel Defaults
+    * Expand Use of Digital Media
+</aside>
+
+--------------------------------------
+
+<div style="text-align: left; vertical-align: middle">
+  <h2>Marcus Adams</h2>
+  <h4>Blog:
+    <a href="datainprogress.com/blog">datainprogress.com</a>
+  </h4>
+  <h4>@marcusinprogress</h4>
+  <h4>Github: 
+    <a href="https://github.com/adamsma">github.com/adamsma</a>
+  </h4>
+  <h4>Slides: 
+    <a href="https://adamsma.github.io/FDAPQRI2019/">adamsma.github.io/FDAPQRI2019/</a>
+  </h4>
+</div>
