@@ -33,7 +33,6 @@ output:
 </p>
 
 
-
 <p class="fragment fade-up" data-fragment-index="3">
   ...and change public health *forever*...
 </p>
@@ -166,23 +165,34 @@ output:
 <section class="titleslide level1">
   ![](img/Clippy_Excel.png)
 <aside class = "notes">
-
+  * Excel chart wizard allowed us to make visualizations faster and easier than before
+  * But instead of using this to perfect visualizations, we used it to bypass design
 </aside>
 
 -------------------------------------------------------------------------------
-![](img/3dBar.jpg)
-
+![](img/3dBar.jpg){style="border: 0px; width: 607px; height: 328px" alt="These defaults are not ok..."}
+<div style="font-size: 1.5em;">*"That's an appropriate <br>use of a 3D bar chart"*</div>
+<div style="font-size: 1.25em" class="fragment fade-up">---No One Ever</div>
 <aside class = "notes">
-  "That's an appropriate use of a 3D Bar Chart" -- No one ever
+  Plenty of tirades just a Google search away, but a quote that's sort of the epitome of my , let's say, objections
+  
+  * Gray flood fill is just excess ink
+  * Generally against grid lines
+  * Perspective unnecessary and misleading - the values are 1:5
 </aside>
 
 </section>
 
 -------------------------------------------------------------------------------
-<h1>Now Entering the World of Digital Visualization</h1>
-<section class="titleslide level1">
+<h1 class="darkoutline">Welcome to a Digital World</h1>
+<section class="titleslide level1" data-background="img/binary-globe.jpg">
 
 <aside class = "notes">
+  * Excel can do many things
+    + And be do use it for many things
+    + We just don't tend to use it for what it's good at (data entry, reactive programming)
+    + Recent years have brought explosion of new/better digital tools 
+  * Excel was a large step forward, and mainly exhibited first digitalization benefit
 </aside>
 
 </section>
@@ -215,6 +225,7 @@ output:
 
 <aside class = "notes">
   Taken from Thomas Lin Pedersen
+  
   * Static Viz
   * Interactive Viz
   * Motion Viz
@@ -223,10 +234,10 @@ output:
 ## Static Digital Visualizations
 
 <aside class = "notes">
-  Different formats - SVG allows scaling (first principles of visualizations)
-  Transferable
-  Include by Reference (need to discussion around data integrity)
-  Combinations
+  * Different formats - SVG allows scaling (first principles of visualizations)
+  * Transferable
+  * Include by Reference (need to discussion around data integrity)
+  * Combinations
 </aside>
 
 ## Interactive Visualizations
@@ -240,20 +251,52 @@ output:
 -------------------------------------------------------------------------------
 
 <section class="titleslide level1">
-<h1>Not Just A Good Place to Buy Camping Equipment</h1>
+<h1>Not Just For Camping Equipment</h1>
+
+<div class="row">
+
+  <div class="column" style="text-align: left; padding: 7vw 0 0 0; font-size: 155%;">
+  
+  <i class="fragment insert-right far fa-clone" data-fragment-index="0"></i> 
+  <span class="faText"> R 
+  <span class="fragment insert-left" data-fragment-index="0">- Reproducible
+  </span></span>
+  
+  <i class="fragment insert-right fas fa-expand-arrows-alt" data-fragment-index="1"></i>
+  <span class="faText"> E 
+  <span class="fragment fade-left" data-fragment-index="1">- Extensible
+  </span></span>
+  
+  <i class="fragment insert-right fas fa-network-wired" data-fragment-index="2"></i>
+  <span class="faText"> I 
+  <span class="fragment insert-left" data-fragment-index="2">- Integratable
+  </span></span>
+  
+  </div>
+  
+  <div class="column">
+  
+  <i class="fas fa-campground fragment disappear" style="font-size: 800%; padding: 7vw 0 0 0; "data-fragment-index="2"></i>
+  <i class="fas fa-laptop-code fragment appear" style="font-size: 800%; padding: 7vw 0 0 0;" data-fragment-index="2"></i>
+  
+  </div>
+  
+</div>
 
 <aside class = "notes">
+Need an acronym, after all this is a pharma conference<br>
 Sets the stage (not inherent) for
-  * Reproducible research and reports
+
+  * Reproducible research and reports 
     + Automated or real time updates
     + Traceability
-  * Extensibile
+  * Extensibile 
     + Beauty of open source
-    + Different views for different purposes (printing vs display)
-  * Integratable
+    + Different views, same content
+  * Integratable (creating this word)
     + Google Lighthouse
     + Reusable (iframe)
-    + Can we scripts to assess data integrity and other GxP Practices?
+    + Scripts to assess data integrity/GxP practices?
   
 </aside>
 
@@ -261,21 +304,28 @@ Sets the stage (not inherent) for
 
 --------------------------------------
 
-<blockquote class="single-quote">
+<section class="titleslide level1" data-background="img/Star-Sky.jpg">
+
+<blockquote class="single-quote" style="text-shadow: 2px 2px 2px #000000; background: rgba(255, 255, 255, 0.2);">
 Computers have enabled people to make more mistakes faster than almost any invention in history, with the possible exception of tequila and handguns.<br>
 --- Mitch Ratcliffe
 </blockquote>
 
 <aside class = "notes">
-  ## Remember
-    * Start With Design Principles
-    * Move Beyond Excel Defaults
-    * Expand Use of Digital Media
+
+  * Start With Design Principles
+  * Move Beyond Excel Defaults
+  * Expand Use of Digital Media
+  
 </aside>
+
+</section>
 
 --------------------------------------
 
-<div style="text-align: left; vertical-align: middle">
+<section class="titleslide level1" data-background="img/Star-Sky.jpg">
+
+<div style="text-align: left; padding: 4em 0 0 0;">
   <h2>Marcus Adams</h2>
   <h4>Blog:
     <a href="datainprogress.com/blog">datainprogress.com</a>
@@ -288,3 +338,4 @@ Computers have enabled people to make more mistakes faster than almost any inven
     <a href="https://adamsma.github.io/FDAPQRI2019/">adamsma.github.io/FDAPQRI2019/</a>
   </h4>
 </div>
+</section>

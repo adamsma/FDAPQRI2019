@@ -19,7 +19,17 @@
 
 .reveal .slides section .fragment.insert-right.visible{
 	transform: translate(0, 0);
-	font-size: 100%;
+	font-size: inherit;
+}
+
+.reveal .slides section .fragment.insert-left{
+	transform: translate(20%, 0);
+	font-size: 0%;
+}
+
+.reveal .slides section .fragment.insert-left.visible{
+	transform: translate(0, 0);
+	font-size: inherit;
 }
 
 .reveal h1 {
@@ -60,4 +70,35 @@
 
 .reveal li{
   padding-bottom: 12px;
+}
+
+.reveal h1.darkoutline{
+	text-shadow: 
+		0 1px 0 #1c1e20, 
+		0 2px 0 #1c1e20, 
+		0 3px 0 #1c1e20, 
+		0 4px 0 #b9b9b9, 
+		0 5px 0 #aaa, 
+		0 6px 1px rgba(0, 0, 0, 0.1), 
+		0 0 5px rgba(0, 0, 0, 0.1), 
+		0 1px 3px rgba(0, 0, 0, 0.3), 
+		0 3px 5px rgba(0, 0, 0, 0.2), 
+		0 5px 10px rgba(0, 0, 0, 0.25), 
+		0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reveal .column{
+	float: left;
+	width: 50%;	
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.reveal .faText{
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
