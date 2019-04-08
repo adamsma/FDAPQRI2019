@@ -102,3 +102,15 @@
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 }
+
+.reveal .noframe{
+	background: inherit; 
+	border: 0px; 
+	box-shadow: none;
+}
+
+.reveal .spcchart{
+	width: 80%;
+	margin: -10px 0;
+	
+}

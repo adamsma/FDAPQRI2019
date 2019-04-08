@@ -1,23 +1,36 @@
 ---
-title: "Beyond the Big Crunch of Excel: The Big Bang of Digital Visualizations"
-author: Marcus Adams
+title: "Beyond the Big Crunch of Excel:<br>The Big Bang of Digital Visualizations"
+author: <br><br><br><br><br><br>Marcus Adams
 date: April 10, 2019
+params:
+  genFigs: TRUE
 output: 
   revealjs::revealjs_presentation:
     theme: league
     highlight: kate
-    self_contained: TRUE
+    self_contained: FALSE
     pandoc_args: [
       "--output", "slides.html"
     ]
     css: www/custom.css
     # template: www/modTemplate.html
     template: www/modJPGTemplate.html
+    reveal_options:
+      progress: FALSE
     include:
       in_header: www/header.html
       after_body: www/doc_suffix.html
-    # reveal_plugins: ["notes", "zoom"]
+    reveal_plugins: ["notes", "zoom"]
 ---
+
+```{r setUp, echo=FALSE, include=FALSE}
+  knitr::opts_chunk$set(echo = FALSE)
+  knitr::opts_chunk$set(message = FALSE)
+  knitr::opts_chunk$set(warning = FALSE)
+  
+  if(params$genFigs) source("R/SetUp.R")
+```
+
 
 <section class="titleslide level1">
 
@@ -49,7 +62,7 @@ output:
 
 ![](img/obligatory-meme.png)
 
-<aside class = "notes">
+<aside class="notes">
   Obligatory Meme - There is no shortage of people willing to tell you what to do. Here's just a few.
 </aside>
 
@@ -61,7 +74,7 @@ output:
 * Chen, Chun-houh, et al. *Handbook of Data Visualization*. Springer, 2016.
 * Cleveland, William S. *The Elements of Graphing Data*. AT&T Bell, 1994.
 
-<aside class = "notes">
+<aside class="notes">
   * A book from Harvard so you know it's good
   * Going real old school with Brinton
   * Compliation, so even more bang for your buck
@@ -74,7 +87,7 @@ output:
 * Ellis, Laura. “Little Miss Data - Weird Graphs.” *Little Miss Data*, http://www.littlemissdata.com/search?q=weird%20graphs.
 * Healy, Kieran. *Data Visualization: A Practical Introduction*. Princeton University Press, 2019.
 
-<aside class = "notes">
+<aside class="notes">
   * A blog...typical millennials
 </aside>
 
@@ -85,7 +98,7 @@ output:
 * Postman, Neil. *Amusing Ourselves to Death: Public Discourse in the Age of Show Business*. Simon Fraser University, 2007.
 * “Results - The Visual Display of Data.” *Biomedical Research: How to Plan, Publish, and Present It*, by W. F. Whimster et al., Springer, 1997, pp. 70–93.
 
-<aside class = "notes">
+<aside class="notes">
   * sprinkling in some design principles
 </aside>
 
@@ -96,7 +109,7 @@ output:
 * Sula, Chris Alen. “The Ethics of Visualization.” *Chris Alen Sula*, http://chrisalensula.org/the-ethics-of-visualization/.
 * Sunstein, Cass R., and Richard H. Thaler. *Nudge: Improving Decisions about Health, Wealth and Happiness*. Penguin, 2009.
 
-<aside class = "notes">
+<aside class="notes">
   * some more blog, since this is a talk about digitalization after all
   * make sure you get some ethics in there
   * behavioral economics and visualization aren't that unrelated; plus he is a Nobel laureate
@@ -109,7 +122,7 @@ output:
 * Wilkinson, Leland. *Grammar of Graphics*. Springer, 2012.
 * Zhu, Ying. “Measuring Effective Data Visualization.” *Advances in Visual Computing Lecture Notes in Computer Science*, Part III, 2007, pp. 652–661., doi:10.1007/978-3-540-76856-2_64.
 
-<aside class = "notes">
+<aside class="notes">
   * A classic with the first one
   * Grammar of Graphics is a real page turner
   * And a few journal articles for the academic types
@@ -119,44 +132,105 @@ output:
 
 -------------------------------------------------------------------------------
 <h1>Be Purposeful</h1>
-<section class="titleslide level1">
+<section class="titleslide level1" data-background-color="#586638">
 ## Philosophical Considerations
 
-<aside class = "notes">
+![](img/LRBrain.png){class="noframe"}
 
+<aside class="notes">
+  * Not left and right brain as logical vs creative
+  * Iain McGilchrist describes it differently
+    + left as narrowly, detailed focused
+    + right as broadly, vigilant 
+  * Use both, but use an analogy
+  * Visualizations bridge individual results to trends
+  * Management/reviewers don't know all the details of your experiment 
 </aside>
 
 ## Pragmatic Considerations
 
+```{r SPC}
+  if(params$genFigs) source("R/RunCharts.R")
+```
 
+<img src="img/BaseCtrlChart.png" class="noframe spcchart fragment disappear" data-fragment-index="0">
+<span class="fragment disappear" data-fragment-index="1")>
+  <img src="img/CtrlChartWRelease.png" class="noframe spcchart fragment appear" data-fragment-index="0">
+</span>
+<img src="img/cqaDistribution.png" style="width: 70%" class="noframe fragment appear" data-fragment-index="1">
 
-<aside class = "notes">
-  If it's a statistical control chart, don't put on specs. Use a histogram
+<aside class="notes">
+  * Remember what you are trying to assess
+  * don't become distracted
+  * If it's a statistical control chart, don't put on specs. 
+    + Use a histogram
 </aside>
 
 </section>
 
 -------------------------------------------------------------------------------
 <h1>Be Deliberate</h1>
-<section class="titleslide level1">
+<section class="titleslide level1" data-background-color="#2288a8">
 
-## Tufte Says..
+<aside class="notes">
+  * Data only speaks for itself with the voice you give it.
+</aside>
 
-## Hierarchy of Visual Comparison
+## Elementary Graphical-Perception Tasks (Cleveland 1985)
 
-<aside class = "notes">
+<div class="row">
+  <div class="column", style="font-size: 90%">
+  1. Position Along Common Axis
+  1. Position on Identical, Nonaligned Scales
+  1. Length
+  1. Angle
+  1. Slope
+  1. Area
+  1. Volume/Density/Color Saturation
+  1. Color Hue
+  </div>
+  
+  <div class="column">
+  
+  <span class="fragment disappear" data-fragment-index="0">
+  <br><img class="noframe" src="img/04-vizTasks.png" >
+  </span>
+  <span class="fragment appear" data-fragment-index="0">
+  <br><span class="fragment disappear" data-fragment-index="1">
+  <img class="noframe" src="img/03-vizTasks.png">
+  </span></span>
+  <span class="fragment appear" data-fragment-index="1">
+  <img src="img/01-vizTasks.png" class="noframe viztask fragment disappear" data-fragment-index="2"/>
+  </span>
+  <span class="fragment appear" data-fragment-index="2">
+  <img src="img/02-vizTasks.png" class="noframe viztask fragment disappear" data-fragment-index="3"/>
+  </span>
+  <span class="fragment appear" data-fragment-index="3">
+  <img src="img/05-vizTasks.png" class="noframe viztask fragment appear" data-fragment-index="3"/>
+  </span>
+  
+  </div>
 
+<aside class="notes">
+  * One consideration
+  * Other design principles
+    + optimize data to ink ratio
+    + accessibility (color blindness)
+    + aesthetic-usability effect
+      - review vs. final
 </aside>
 
 </section>
 
 -------------------------------------------------------------------------------
 <h1>Be Consistent</h1>
-<section class="titleslide level1">
+<section class="titleslide level1"" data-background-color="#ecbd8b">
 
-<aside class = "notes">
+<aside class="notes">
 
 </aside>
+
+## Not Every Plot Deserves Its Own Theme
 
 </section>
 
@@ -164,7 +238,7 @@ output:
 <h1>Then There Was Excel...</h1>
 <section class="titleslide level1">
   ![](img/Clippy_Excel.png)
-<aside class = "notes">
+<aside class="notes">
   * Excel chart wizard allowed us to make visualizations faster and easier than before
   * But instead of using this to perfect visualizations, we used it to bypass design
 </aside>
@@ -173,7 +247,7 @@ output:
 ![](img/3dBar.jpg){style="border: 0px; width: 607px; height: 328px" alt="These defaults are not ok..."}
 <div style="font-size: 1.5em;">*"That's an appropriate <br>use of a 3D bar chart"*</div>
 <div style="font-size: 1.25em" class="fragment fade-up">---No One Ever</div>
-<aside class = "notes">
+<aside class="notes">
   Plenty of tirades just a Google search away, but a quote that's sort of the epitome of my , let's say, objections
   
   * Gray flood fill is just excess ink
@@ -187,7 +261,7 @@ output:
 <h1 class="darkoutline">Welcome to a Digital World</h1>
 <section class="titleslide level1" data-background="img/binary-globe.jpg">
 
-<aside class = "notes">
+<aside class="notes">
   * Excel can do many things
     + And be do use it for many things
     + We just don't tend to use it for what it's good at (data entry, reactive programming)
@@ -203,7 +277,7 @@ output:
 
 <h1>Digital Production</h1>
 
-<aside class = "notes">
+<aside class="notes">
   * Two Approaches Enter, One Approach Leaves
   * Digital Visualizations are inherently Digitally Produced
   * Not just digital producing static assets
@@ -223,7 +297,7 @@ output:
 <section class="titleslide level1">
 <h1>The Digital Triad of Power</h1>
 
-<aside class = "notes">
+<aside class="notes">
   Taken from Thomas Lin Pedersen
   
   * Static Viz
@@ -233,9 +307,9 @@ output:
 
 ## Static Digital Visualizations
 
-<aside class = "notes">
+<aside class="notes">
   * Different formats - SVG allows scaling (first principles of visualizations)
-  * Transferable
+  * Transferable (send a link not copy)
   * Include by Reference (need to discussion around data integrity)
   * Combinations
 </aside>
@@ -283,7 +357,7 @@ output:
   
 </div>
 
-<aside class = "notes">
+<aside class="notes">
 Need an acronym, after all this is a pharma conference<br>
 Sets the stage (not inherent) for
 
@@ -294,7 +368,7 @@ Sets the stage (not inherent) for
     + Beauty of open source
     + Different views, same content
   * Integratable (creating this word)
-    + Google Lighthouse
+    + Google Lighthouse, Analytics (mobile app), git 
     + Reusable (iframe)
     + Scripts to assess data integrity/GxP practices?
   
@@ -311,7 +385,7 @@ Computers have enabled people to make more mistakes faster than almost any inven
 --- Mitch Ratcliffe
 </blockquote>
 
-<aside class = "notes">
+<aside class="notes">
 
   * Start With Design Principles
   * Move Beyond Excel Defaults
@@ -327,10 +401,12 @@ Computers have enabled people to make more mistakes faster than almost any inven
 
 <div style="text-align: left; padding: 4em 0 0 0;">
   <h2>Marcus Adams</h2>
-  <h4>Blog:
+  <h4>Blog (coming soon):
     <a href="datainprogress.com/blog">datainprogress.com</a>
   </h4>
-  <h4>@marcusinprogress</h4>
+  <h4>Twitter:
+    <a href="https://twitter.com/mtotheadams">@MtotheAdams</a>
+    </h4>
   <h4>Github: 
     <a href="https://github.com/adamsma">github.com/adamsma</a>
   </h4>
