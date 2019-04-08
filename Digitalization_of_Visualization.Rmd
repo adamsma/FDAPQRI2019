@@ -3,7 +3,7 @@ title: "Beyond the Big Crunch of Excel:<br>The Big Bang of Digital Visualization
 author: <br><br><br><br><br><br>Marcus Adams
 date: April 10, 2019
 params:
-  genFigs: TRUE
+  genFigs: FALSE
 output: 
   revealjs::revealjs_presentation:
     theme: league
@@ -288,6 +288,8 @@ output:
 
 <h1>Digital Production</h1>
 
+<img src="img/digitalProd.png" class="noframe" style="margin-top: 7%;"> 
+
 <aside class="notes">
   * Two Approaches Enter, One Approach Leaves
   * Digital Visualizations are inherently Digitally Produced
@@ -308,6 +310,8 @@ output:
 <section class="titleslide level1">
 <h1>The Digital Triad of Power</h1>
 
+<img src="img/vizTriad.png" class="noframe" style="width: 65%;">
+
 <aside class="notes">
   Taken from Thomas Lin Pedersen
   
@@ -316,7 +320,8 @@ output:
   * Motion Viz
 </aside>
 
-## Static Digital Visualizations
+## Static Digital Visualizations {data-background-color="#586638"}
+<!-- RGB 88 102 56 -->
 
 <aside class="notes">
   * Different formats - SVG allows scaling (first principles of visualizations)
@@ -325,9 +330,11 @@ output:
   * Combinations
 </aside>
 
-## Interactive Visualizations
+## Interactive Visualizations {data-background-color="#2288a8"} 
+<!-- RGB 34 136 168 -->
 
-## Motion Visualizations
+## Motion Visualizations {data-background-color="#ecbd8b"}
+<!-- RGB 236 189 139 -->
 
 ## Multi-Modal
 
