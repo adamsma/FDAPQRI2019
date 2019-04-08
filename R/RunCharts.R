@@ -2,7 +2,7 @@
 #### Script that generates SPC charts needed for presentation ####
 ##################################################################
 
-if(!as.logical(Sys.getenv("PRES_SETUP"))){
+if(Sys.getenv("PRES_SETUP") == ""){
   library(dplyr)
   library(ggplot2)
   library(magrittr)
@@ -22,6 +22,12 @@ cqa_mu <- 4
 cqa_sd <- 0.25
 ctrlLims <- cqa_mu + c(-3, 3)*cqa_sd
 
+# adding additional set seed not to disrupt previous random generation
+set.seed(41)
+dom <- sample(1:3, bCt, replace = TRUE) %>%
+  cumsum() %>%
+  add(as.Date("2018-09-01"))
+
 # set seeed
 set.seed(42)
 
@@ -36,7 +42,8 @@ batchNums <- GenBatchNumber() %>%
   factor()
 
 # create data set for plots
-myData <- data.frame(batchNums, kf) %>%
+myData <- data.frame(batchNums = factor(batchNums), kf, 
+                     dom = as.character(dom), stringsAsFactors = FALSE) %>%
   mutate(viols = (kf > ctrlLims[2]) | (kf < ctrlLims[1]),
          ruleLabel = ifelse(viols, "1", ""))
 
@@ -110,5 +117,6 @@ ggsave("img/BaseCtrlChart.png", plot = spc1, bg = "transparent")
 ggsave("img/CtrlChartWRelease.png", plot = spc2, bg = "transparent")
 ggsave("img/cqaDistribution.png", plot = ppkHist, bg = "transparent")
 
-
+# save data for use with JMP
+readr::write_csv(myData, "R/ctrlChartdata.csv")
 

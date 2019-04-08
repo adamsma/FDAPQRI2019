@@ -227,10 +227,21 @@ output:
 <section class="titleslide level1"" data-background-color="#ecbd8b">
 
 <aside class="notes">
-
+  * Branding has it purpose
+  * Also want to help the view asorb the data
 </aside>
 
 ## Not Every Plot Deserves Its Own Theme
+
+<img src="img/BaseCtrlChart.png" class = "noframe" style="width: 55%; margin: -4.8vw 0 0 0;">
+
+<img src="img/jmpCtrlChart.png" class = "noframe" style="width: 55%; margin: -5vw 0 0 0;">
+
+<aside class="notes">
+  * Don't make your reader constantly relearn mappings
+  * Prefer the minimal, but keep to norms
+    + Yellow and green aren't actually bad
+</aside>
 
 </section>
 
