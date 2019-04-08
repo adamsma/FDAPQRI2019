@@ -9,6 +9,8 @@ output:
     self_contained: TRUE
     reveal_options:
       controls: FALSE
+    include:
+      in_header: www/gascript.html
 ---
 
 ## Beyond the Big Crunch of Excel: {data-background='https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/northamerica_vir_2018111_lrg.jpg'} 
