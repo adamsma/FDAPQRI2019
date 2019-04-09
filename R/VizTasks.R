@@ -46,7 +46,7 @@ p2b <- ggplot(pData, aes(x = reorder(site, deviations), y = deviations)) +
   theme(axis.title = element_text(size = 24, color = txtClr),
         axis.text = element_text(size = 20, color = txtClr))
 
-p3 <- p2 + 
+p3 <- p2a + 
   facet_wrap(grps ~ ., scales = "free_y") +
   theme(strip.background = element_rect(fill = NA),
         strip.text = element_text(color = NA),
