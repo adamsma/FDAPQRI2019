@@ -10,7 +10,7 @@ output:
     highlight: kate
     self_contained: FALSE
     pandoc_args: [
-      "--output", "slides.html"
+      "--output", "index.html"
     ]
     css: www/custom.css
     # template: www/modTemplate.html
@@ -53,6 +53,14 @@ output:
 ## Plots in the Time of Cholera
 
 ![](img/snow_map.png){style="max-width:65%; max-height:65%"}
+<aside class="notes">
+  * Pre-dates germ theory
+  * Plot saw cases were clustered around a water pump
+  * Thus epidemiology was born with a visualization
+  * Think about the effort to develop the plot
+  * Have we lost it with our ability to quickly plot?
+<aside>
+
 </section>
 
 -------------------------------------------------------------------------------
@@ -178,6 +186,7 @@ output:
 
 <aside class="notes">
   * Data only speaks for itself with the voice you give it.
+  * The design choices you make will have an impact
 </aside>
 
 ## Elementary Graphical-Perception Tasks (Cleveland 1985)
@@ -233,6 +242,7 @@ output:
 <aside class="notes">
   * Branding has it purpose
   * Also want to help the view asorb the data
+  * Astute viewer realizes I broke with Merck template
 </aside>
 
 ## Not Every Plot Deserves Its Own Theme
@@ -281,6 +291,7 @@ output:
     + And be do use it for many things
     + We just don't tend to use it for what it's good at (data entry, reactive programming)
     + Recent years have brought explosion of new/better digital tools 
+  * Many things you are aware of, but way of thinking
   * Excel was a large step forward, and mainly exhibited first digitalization benefit
 </aside>
 
@@ -295,7 +306,6 @@ output:
 <img src="img/digitalProd.png" class="noframe" style="margin-top: 7%;"> 
 
 <aside class="notes">
-  * Two Approaches Enter, One Approach Leaves
   * Digital Visualizations are inherently Digitally Produced
   * Not just digital producing static assets
   	+ e.g. digital printing has helped with late stage customization
@@ -319,7 +329,7 @@ output:
 <aside class="notes">
   Taken from Thomas Lin Pedersen
   
-  * Static Viz
+  * Static Viz - the bread and butter
   * Interactive Viz
   * Motion Viz
 </aside>
@@ -344,7 +354,7 @@ output:
 <img src="img/interactViz.gif" class="noframe" style="width: 80%;">
 
 <aside class="notes">
-  * Compact form
+  * Compact form (one visualization can encompass 40 with a selector)
   * Let people ask their own questions
   * Drill down without drinking from the fire hose
 </aside> 
@@ -357,6 +367,8 @@ output:
 <aside class="notes">
  * Use for illustrating a time dimension
  * Under appreciated
+ * Saw some pretty awesome CFD/FEM
+ * Want to lower the bar to entry
  * No longer screen shots, but fluid transitions
  * Instructions - SOP with steps for analysis
 </aside>
@@ -414,6 +426,7 @@ Sets the stage (not inherent) for
 
   * Reproducible research and reports 
     + Automated or real time updates
+    + Dashboard instead of manual list
     + Traceability
   * Extensibile 
     + Beauty of open source
@@ -444,6 +457,9 @@ Computers have enabled people to make more mistakes faster than almost any inven
   * Start With Design Principles
   * Move Beyond Excel Defaults
   * Expand Use of Digital Media
+  * Small piece, but data is our product 
+  * Better visualizations = better faster insights
+  * Better faster insights = better products that get to patients faster
   
 </aside>
 
