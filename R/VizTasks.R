@@ -20,7 +20,7 @@ pData <- data.frame(site = LETTERS[seq_along(cts)],
 p1 <- ggplot(pData, aes(x = site, y = deviations)) +
   geom_bar(stat = "identity", width = 0.98) +
   
-  labs(x = "Site", y = "Deviations") + 
+  labs(x = "Site", y = "Investigations") + 
   
   theme_clear() +
   theme(axis.title = element_text(size = 24, color = txtClr),
@@ -29,7 +29,7 @@ p1 <- ggplot(pData, aes(x = site, y = deviations)) +
 p2a <- ggplot(pData, aes(x = reorder(site, seq(8, 1, -1)), y = deviations)) +
   geom_bar(stat = "identity", width = 0.98) +
   
-  labs(x = "Site", y = "Deviations") + 
+  labs(x = "Site", y = "Investigations") + 
   coord_flip() +
   
   theme_clear() +
@@ -39,7 +39,7 @@ p2a <- ggplot(pData, aes(x = reorder(site, seq(8, 1, -1)), y = deviations)) +
 p2b <- ggplot(pData, aes(x = reorder(site, deviations), y = deviations)) +
   geom_bar(stat = "identity", width = 0.98) +
   
-  labs(x = "Site", y = "Deviations") + 
+  labs(x = "Site", y = "Investigations") + 
   coord_flip() +
   
   theme_clear() +
@@ -56,7 +56,7 @@ p4 <- ggplot(pData,
              aes(x = "", y = sort(deviations), fill = site)) +
   geom_bar(stat = "identity", width = 0.98) +
   
-  labs(title = "Deviations") +
+  labs(title = "Investigations") +
   scale_fill_brewer(name = "Site", palette = "Dark2") +
   coord_polar("y", start = 0) +
   

@@ -2,7 +2,7 @@
 #### Script that sets up data for motion ####
 #############################################
 
-library(ggplot)
+library(ggplot2)
 library(gganimate)
 
 set.seed(42)
@@ -17,7 +17,7 @@ pData <- data.frame(site = LETTERS[seq(nSites)],
 aniPlot <- ggplot(pData, aes(x = site, y = deviations)) +
   geom_bar(stat = "identity", width = 0.98) +
   
-  labs(x = "Site", y = "Deviations") + 
+  labs(x = "Site", y = "Investigations") + 
   coord_flip() +
   
   theme(panel.background = element_rect(fill = "white", color = "black"),

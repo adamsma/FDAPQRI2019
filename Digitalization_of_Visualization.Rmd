@@ -1,6 +1,6 @@
 ---
 title: "Beyond the Big Crunch of Excel:<br>The Big Bang of Digital Visualizations"
-author: <br><br><br><br><br><br>Marcus Adams
+author: <br><br><br><br><br>Marcus Adams
 date: April 10, 2019
 params:
   genFigs: FALSE
@@ -237,9 +237,9 @@ output:
 
 ## Not Every Plot Deserves Its Own Theme
 
-<img src="img/BaseCtrlChart.png" class = "noframe" style="width: 55%; margin: -90px 0 0 0;">
+<img src="img/BaseCtrlChart.png" class = "noframe" style="width: 55%; margin: -60px 0 0 0;">
 
-<img src="img/jmpCtrlChart.png" class = "noframe" style="width: 55%; margin: -95px 0 0 0;">
+<img src="img/jmpCtrlChart.png" class = "noframe" style="width: 55%; margin: -65px 0 0 0;">
 
 <aside class="notes">
   * Don't make your reader constantly relearn mappings
@@ -361,15 +361,15 @@ output:
  * Instructions - SOP with steps for analysis
 </aside>
 
-## Multi-Modal
+<!-- ## Multi-Modal -->
 
-<img src="img/multiViz.gif" class="noframe" style="width: 75%;">
+<!-- <img src="img/multiViz.gif" class="noframe" style="width: 75%;"> -->
 
-<aside class="notes">
-  * Not stuck at static but free to roam the triangle
-  * Show you interactions
-  * Document your analysis
-</aside>
+<!-- <aside class="notes"> -->
+<!--   * Not stuck at static but free to roam the triangle -->
+<!--   * Show you interactions -->
+<!--   * Document your analysis -->
+<!-- </aside> -->
 
 </section>
 
@@ -431,10 +431,13 @@ Sets the stage (not inherent) for
 
 <section class="titleslide level1" data-background="img/Star-Sky.jpg">
 
-<blockquote class="single-quote" style="text-shadow: 2px 2px 2px #000000; background: rgba(255, 255, 255, 0.2);">
+<blockquote class="single-quote" style="text-shadow: 2px 2px 2px #000000; background: rgba(255, 255, 255, 0.2); margin-bottom: 1em;">
 Computers have enabled people to make more mistakes faster than almost any invention in history, with the possible exception of tequila and handguns.<br>
 --- Mitch Ratcliffe
 </blockquote>
+
+<br>
+<img align="left" class="noframe logo" src=`r if(file.exists("img/mrk_logo.png")) knitr::image_uri("img/mrk_logo.png")`></img>
 
 <aside class="notes">
 
@@ -446,23 +449,23 @@ Computers have enabled people to make more mistakes faster than almost any inven
 
 </section>
 
---------------------------------------
+<!-- -------------------------------------- -->
 
-<section class="titleslide level1" data-background="img/Star-Sky.jpg">
+<!-- <section class="titleslide level1" data-background="img/Star-Sky.jpg"> -->
 
-<div style="text-align: left; padding: 4em 0 0 0;">
-  <h2>Marcus Adams</h2>
-  <h4>Blog (coming soon):
-    <a href="datainprogress.com/blog">datainprogress.com</a>
-  </h4>
-  <h4>Twitter:
-    <a href="https://twitter.com/mtotheadams">@MtotheAdams</a>
-    </h4>
-  <h4>Github: 
-    <a href="https://github.com/adamsma">github.com/adamsma</a>
-  </h4>
-  <h4>Slides: 
-    <a href="https://adamsma.github.io/FDAPQRI2019/">adamsma.github.io/FDAPQRI2019/</a>
-  </h4>
-</div>
-</section>
+<!-- <div style="text-align: left; padding: 4em 0 0 0;"> -->
+<!--   <h2>Marcus Adams</h2> -->
+<!--   <h4>Blog (coming soon): -->
+<!--     <a href="datainprogress.com/blog">datainprogress.com</a> -->
+<!--   </h4> -->
+<!--   <h4>Twitter: -->
+<!--     <a href="https://twitter.com/mtotheadams">@MtotheAdams</a> -->
+<!--     </h4> -->
+<!--   <h4>Github:  -->
+<!--     <a href="https://github.com/adamsma">github.com/adamsma</a> -->
+<!--   </h4> -->
+<!--   <h4>Slides:  -->
+<!--     <a href="https://adamsma.github.io/FDAPQRI2019/">adamsma.github.io/FDAPQRI2019/</a> -->
+<!--   </h4> -->
+<!-- </div> -->
+<!-- </section> -->
