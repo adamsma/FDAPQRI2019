@@ -288,7 +288,7 @@ output:
 
 <aside class="notes">
   * Excel can do many things
-    + And be do use it for many things
+    + And we do use it for many things...
     + We just don't tend to use it for what it's good at (data entry, reactive programming)
     + Recent years have brought explosion of new/better digital tools 
   * Many things you are aware of, but way of thinking
@@ -327,7 +327,7 @@ output:
 <img src="img/vizTriad.png" class="noframe" style="width: 65%;">
 
 <aside class="notes">
-  Taken from Thomas Lin Pedersen
+  Concept from Thomas Lin Pedersen userR 2018
   
   * Static Viz - the bread and butter
   * Interactive Viz
