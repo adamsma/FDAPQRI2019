@@ -327,7 +327,7 @@ output:
 <img src="img/vizTriad.png" class="noframe" style="width: 65%;">
 
 <aside class="notes">
-  Taken from Thomas Lin Pedersen
+  Concept from Thomas Lin Pedersen userR 2018
   
   * Static Viz - the bread and butter
   * Interactive Viz
