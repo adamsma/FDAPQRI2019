@@ -52,12 +52,13 @@ p3 <- p2a +
         strip.text = element_text(color = NA),
         strip.placement = "inside")
 
-p4 <- ggplot(pData, 
-             aes(x = "", y = sort(deviations), fill = site)) +
+p4 <- ggplot(arrange(pData, deviations), 
+             aes(x = "", y = deviations, fill = reorder(site, deviations))) +
   geom_bar(stat = "identity", width = 0.98) +
   
   labs(title = "Investigations") +
-  scale_fill_brewer(name = "Site", palette = "Dark2") +
+  scale_fill_brewer(name = "Site", palette = "Dark2", 
+                    breaks = pData$site) +
   coord_polar("y", start = 0) +
   
   theme_clear() +
